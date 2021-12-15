@@ -33,6 +33,8 @@ default-features = false
 features = ["git", "build", "rustc", "cargo"]
 
 [dependencies.ffmpeg-next]
+git = "https://github.com/Avimitin/rust-ffmpeg"
+branch = "risc-v"
 version = "4.4.0"
 
 [features]

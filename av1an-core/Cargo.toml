@@ -65,6 +65,8 @@ default-features = false
 features = ["const_generics", "const_new", "union"]
 
 [dependencies.ffmpeg-next]
+git = "https://github.com/Avimitin/dashmap"
+branch = "risc-v"
 version = "4.4.0"
 
 [dependencies.plotters]
@@ -81,6 +83,8 @@ version = "1"
 features = ["rt", "process", "io-util"]
 
 [dependencies.dashmap]
+git = "https://github.com/Avimitin/dashmap"
+branch = "risc-v"
 version = "4.0.2"
 features = ["serde"]
 
