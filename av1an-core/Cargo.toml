@@ -85,7 +85,7 @@ features = ["rt", "process", "io-util"]
 [dependencies.dashmap]
 git = "https://github.com/Avimitin/dashmap"
 branch = "risc-v"
-version = "4.0.2"
+version = "5.0.0"
 features = ["serde"]
 
 [features]
