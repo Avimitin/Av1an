@@ -65,7 +65,7 @@ default-features = false
 features = ["const_generics", "const_new", "union"]
 
 [dependencies.ffmpeg-next]
-git = "https://github.com/Avimitin/dashmap"
+git = "https://github.com/Avimitin/rust-ffmpeg"
 branch = "risc-v"
 version = "4.4.0"
 
