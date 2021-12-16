@@ -26,7 +26,6 @@ av1an-cli = { path = "av1an-cli", version = "0.2.1-2" }
 av1an-core = { path = "av1an-core", version = "0.2.0" }
 
 [dependencies.serde]
-version = "1.0.126"
 features = ["serde_derive"]
 git = "https://github.com/Avimitin/serde"
 branch = "risc-v"

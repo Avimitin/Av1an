@@ -25,7 +25,6 @@ sysinfo = "0.21.0"
 splines = "4.0.0"
 
 [dependencies.serde]
-version = "1.0"
 features = ["derive"]
 git = "https://github.com/Avimitin/serde"
 branch = "risc-v"
