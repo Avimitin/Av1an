@@ -24,11 +24,6 @@ serde_json = "1.0"
 sysinfo = "0.21.0"
 splines = "4.0.0"
 
-[dependencies.serde]
-features = ["derive"]
-git = "https://github.com/Avimitin/serde"
-branch = "risc-v"
-
 # the latest git version is currently required since wide_bar
 # with ANSI escape codes is broken on both the stable release
 # and the beta and the fix only exists in the git version
@@ -84,8 +79,12 @@ features = ["rt", "process", "io-util"]
 [dependencies.dashmap]
 git = "https://github.com/Avimitin/dashmap"
 branch = "risc-v"
-version = "5.0.0"
 features = ["serde"]
+
+[dependencies.serde]
+features = ["derive"]
+git = "https://github.com/Avimitin/serde"
+branch = "risc-v"
 
 [features]
 ffmpeg_static = ["ffmpeg-next/static", "ffmpeg-next/build"]
