@@ -20,6 +20,7 @@ av-ivf = "0.2.2"
 memchr = "2.4.1"
 num_cpus = "1.13.0"
 anyhow = "1.0.42"
+serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 sysinfo = "0.21.0"
 splines = "4.0.0"
@@ -77,14 +78,8 @@ version = "1"
 features = ["rt", "process", "io-util"]
 
 [dependencies.dashmap]
-git = "https://github.com/Avimitin/dashmap"
-branch = "risc-v"
+version = "4.0.2"
 features = ["serde"]
-
-[dependencies.serde]
-features = ["derive"]
-git = "https://github.com/Avimitin/serde"
-branch = "risc-v"
 
 [features]
 ffmpeg_static = ["ffmpeg-next/static", "ffmpeg-next/build"]

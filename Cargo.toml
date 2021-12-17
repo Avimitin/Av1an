@@ -17,6 +17,7 @@ name = "av1an"
 
 [dependencies]
 anyhow = "1.0.42"
+serde = { version = "1.0.132", features = ["serde_derive"] }
 serde_json = "1.0.64"
 shlex = "1.0.0"
 ctrlc = "3.1.9"
@@ -24,11 +25,6 @@ path_abs = "0.5.1"
 structopt = "0.3.22"
 av1an-cli = { path = "av1an-cli", version = "0.2.1-2" }
 av1an-core = { path = "av1an-core", version = "0.2.0" }
-
-[dependencies.serde]
-features = ["serde_derive"]
-git = "https://github.com/Avimitin/serde"
-branch = "risc-v"
 
 [features]
 default = ["vapoursynth_new_api"]

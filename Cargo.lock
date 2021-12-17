@@ -156,7 +156,7 @@ dependencies = [
  "clap",
  "rav1e",
  "rust_hawktracer",
- "serde 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
  "serde_json",
  "y4m",
 ]
@@ -170,7 +170,7 @@ dependencies = [
  "av1an-core",
  "ctrlc",
  "path_abs",
- "serde 1.0.131 (git+https://github.com/Avimitin/serde?branch=risc-v)",
+ "serde",
  "serde_json",
  "shlex",
  "structopt",
@@ -220,7 +220,7 @@ dependencies = [
  "paste",
  "path_abs",
  "plotters",
- "serde 1.0.131 (git+https://github.com/Avimitin/serde?branch=risc-v)",
+ "serde",
  "serde_json",
  "simdutf8",
  "smallvec",
@@ -466,13 +466,13 @@ dependencies = [
 
 [[package]]
 name = "dashmap"
-version = "5.0.0"
-source = "git+https://github.com/Avimitin/dashmap?branch=risc-v#aa7c4e6829e40ac0cd65e24b8f1769c5938ac7de"
+version = "4.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e77a43b28d0668df09411cb0bc9a8c2adc40f9a048afe863e05fd43251e8e39c"
 dependencies = [
  "cfg-if 1.0.0",
  "num_cpus",
- "parking_lot",
- "serde 1.0.131 (git+https://github.com/Avimitin/serde?branch=risc-v)",
+ "serde",
 ]
 
 [[package]]
@@ -1089,8 +1089,8 @@ version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "05ef02f6342ac01d8a93b65f96db53fe68a92a15f41144f97fb00a9e669633c3"
 dependencies = [
- "serde 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde_derive 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
+ "serde_derive",
  "std_prelude",
  "stfu8",
 ]
@@ -1396,36 +1396,18 @@ checksum = "568a8e6258aa33c13358f81fd834adb854c6f7c9468520910a9b1e8fac068012"
 
 [[package]]
 name = "serde"
-version = "1.0.131"
+version = "1.0.132"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b4ad69dfbd3e45369132cc64e6748c2d65cdfb001a2b1c232d128b4ad60561c1"
+checksum = "8b9875c23cf305cd1fd7eb77234cbb705f21ea6a72c637a5c6db5fe4b8e7f008"
 dependencies = [
- "serde_derive 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "serde"
-version = "1.0.131"
-source = "git+https://github.com/Avimitin/serde?branch=risc-v#84fdc7df69cd66f74f9621bb81917e7f622e5926"
-dependencies = [
- "serde_derive 1.0.131 (git+https://github.com/Avimitin/serde?branch=risc-v)",
+ "serde_derive",
 ]
 
 [[package]]
 name = "serde_derive"
-version = "1.0.131"
+version = "1.0.132"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b710a83c4e0dff6a3d511946b95274ad9ca9e5d3ae497b63fda866ac955358d2"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
-name = "serde_derive"
-version = "1.0.131"
-source = "git+https://github.com/Avimitin/serde?branch=risc-v#84fdc7df69cd66f74f9621bb81917e7f622e5926"
+checksum = "ecc0db5cb2556c0e558887d9bbdcf6ac4471e83ff66cf696e5419024d1606276"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1440,7 +1422,7 @@ checksum = "d0ffa0837f2dfa6fb90868c2b5468cad482e175f7dad97e7421951e663f2b527"
 dependencies = [
  "itoa",
  "ryu",
- "serde 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
 ]
 
 [[package]]
@@ -1760,7 +1742,7 @@ version = "0.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a31142970826733df8241ef35dc040ef98c679ab14d7c3e54d827099b3acecaa"
 dependencies = [
- "serde 1.0.131 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde",
 ]
 
 [[package]]
